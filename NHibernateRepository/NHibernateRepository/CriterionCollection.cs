@@ -26,8 +26,6 @@ namespace NHibernateRepository
 
         public int Count { get { return _collection.Count; } }
 
-        #region Implementation of IEnumerable
-
         public IEnumerator<ICriterion> GetEnumerator()
         {
             return _collection.GetEnumerator();
@@ -37,10 +35,6 @@ namespace NHibernateRepository
         {
             return GetEnumerator();
         }
-
-        #endregion
-
-        #region Equality members
 
         public bool Equals(CriterionCollection other)
         {
@@ -82,8 +76,6 @@ namespace NHibernateRepository
         {
             return !Equals(left, right);
         }
-
-        #endregion
 
         public bool Empty()
         {
