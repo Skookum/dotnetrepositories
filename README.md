@@ -1,3 +1,3 @@
-# Dot Net Modules
+# NHibernate Repository
 
-Skookum built .NET modules that can be installed via the Skookum Nuget package manager.  Do not commit a module here without making it a NuGet package.
+Module that defines a .NET NHibernate Repository.  It will generate a Nuget package that can be downloaded as a 3rd party dll via Visual Studio.
