@@ -11,7 +11,7 @@ namespace Repositories
     {
         protected readonly ISession _session;
 
-        protected NhibernateRepository(ISession session)
+        public NhibernateRepository(ISession session)
         {
             _session = session;
             _session.FlushMode = FlushMode.Auto;
