@@ -7,12 +7,12 @@ namespace Repositories
 {
     public abstract class NHibernateConfigurator
     {
-        public ISessionFactory BuildSessionFactory(string connectionName, Type t)
+        public virtual ISessionFactory BuildSessionFactory(string connectionName, Type t)
         {
             return GetConfiguration(connectionName, t).BuildSessionFactory();
         }
 
-        private FluentConfiguration GetConfiguration(string connectionName, Type t)
+        protected virtual FluentConfiguration GetConfiguration(string connectionName, Type t)
         {
             return Fluently.Configure()
                 .Database(
