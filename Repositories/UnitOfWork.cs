@@ -1,8 +1,9 @@
 ﻿using System;
 using NHibernate;
 using System.Data;
+using Repositories.Interfaces;
 
-namespace NHibernateRepository
+namespace Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

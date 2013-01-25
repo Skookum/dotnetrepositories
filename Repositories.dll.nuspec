@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>NHibernateRepository.dll</id>
+    <id>Repositories.dll</id>
     <version>0.1.0</version>
     <authors>Skookum</authors>
     <owners>Skookum</owners>
@@ -9,9 +9,9 @@
     <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Domain Driven Design Repository with a Fluent NHibernate implementation</description>
+    <description>Domain Driven Design Repositories</description>
     <releaseNotes>Initial Project Creation</releaseNotes>
-    <copyright>Copyright 2012</copyright>
+    <copyright>Copyright 2013</copyright>
     <tags>Repository</tags>
     <dependencies>
       <dependency id="FluentNHibernate" version="1.3.0.733" />

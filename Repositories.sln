@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateRepository", "NHibernateRepository\NHibernateRepository.csproj", "{4AD5D9D2-E19B-45EE-AF75-7861CA7E2C37}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{4AD5D9D2-E19B-45EE-AF75-7861CA7E2C37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8733B682-E06B-499F-8B80-D230D71ABF87}"
 	ProjectSection(SolutionItems) = preProject

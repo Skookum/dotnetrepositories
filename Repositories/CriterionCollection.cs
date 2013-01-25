@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NHibernate.Criterion;
 
-namespace NHibernateRepository
+namespace Repositories
 {
     public class CriterionCollection : IEnumerable<ICriterion>, IEquatable<CriterionCollection>
     {

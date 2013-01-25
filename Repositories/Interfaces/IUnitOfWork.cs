@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NHibernateRepository
+namespace Repositories.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
