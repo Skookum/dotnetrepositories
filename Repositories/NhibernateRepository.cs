@@ -25,7 +25,6 @@ namespace Repositories
         public void Create<T>(T item) where T : class
         {
             _session.Save(item);
-            _session.Flush();
         }
 
         public void Create<T>(IEnumerable<T> items) where T : class
@@ -34,13 +33,11 @@ namespace Repositories
             {
                 _session.Save(item);
             }
-            _session.Flush();
         }
 
         public void Update<T>(T item) where T : class
         {
             _session.Update(item);
-            _session.Flush();
         }
 
         public void Update<T>(IEnumerable<T> items) where T : class
@@ -49,13 +46,11 @@ namespace Repositories
             {
                 _session.Update(item);
             }
-            _session.Flush();
         }
 
         public void Delete<T>(T item) where T : class
         {
             _session.Delete(item);
-            _session.Flush();
         }
 
         public void Delete<T>(IEnumerable<T> items) where T : class
@@ -64,7 +59,6 @@ namespace Repositories
             {
                 _session.Delete(item);
             }
-            _session.Flush();
         }
 
         public void Refresh<T>(T item) where T : class
