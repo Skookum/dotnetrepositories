@@ -38,6 +38,7 @@ namespace Repositories
         public void Update<T>(T item) where T : class
         {
             _session.Update(item);
+            Flush();
         }
 
         public void Update<T>(IEnumerable<T> items) where T : class
@@ -46,11 +47,13 @@ namespace Repositories
             {
                 _session.Update(item);
             }
+            Flush();
         }
 
         public void Delete<T>(T item) where T : class
         {
             _session.Delete(item);
+            Flush();
         }
 
         public void Delete<T>(IEnumerable<T> items) where T : class
@@ -59,6 +62,7 @@ namespace Repositories
             {
                 _session.Delete(item);
             }
+            Flush();
         }
 
         public void Refresh<T>(T item) where T : class
