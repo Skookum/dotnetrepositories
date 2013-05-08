@@ -66,6 +66,11 @@ namespace Repositories
             _session.Refresh(item);
         }
 
+        public void Flush()
+        {
+            _session.Flush();
+        }
+
         public void Dispose()
         {
             _session.Dispose();
