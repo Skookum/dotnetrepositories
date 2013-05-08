@@ -7,7 +7,7 @@ using Repositories.Interfaces;
 
 namespace Repositories
 {
-    public class NhibernateRepository : IRepository, IDisposable
+    public class NhibernateRepository : INhibernateRepository, IDisposable
     {
         protected readonly ISession _session;
 
