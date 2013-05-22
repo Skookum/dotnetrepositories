@@ -74,6 +74,7 @@
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="NHibernateConfigurator.cs" />
     <Compile Include="NhibernateRepository.cs" />
+    <Compile Include="SqlBulkCopier.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
