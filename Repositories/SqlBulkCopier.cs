@@ -11,15 +11,18 @@ namespace Repositories
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-
-                using (SqlBulkCopy sqlBulkCopy = new SqlBulkCopy(connection))
-                {
-                    sqlBulkCopy.DestinationTableName = dataTable.TableName;
-                    sqlBulkCopy.BulkCopyTimeout = 180;
-                    sqlBulkCopy.WriteToServer(dataTable);
-                }
-
+                WriteToServer(connection, dataTable, timeoutSeconds);
                 connection.Close();
+            }
+        }
+
+        public static void WriteToServer(SqlConnection connection, DataTable dataTable, int timeoutSeconds)
+        {
+            using (SqlBulkCopy sqlBulkCopy = new SqlBulkCopy(connection))
+            {
+                sqlBulkCopy.DestinationTableName = dataTable.TableName;
+                sqlBulkCopy.BulkCopyTimeout = 180;
+                sqlBulkCopy.WriteToServer(dataTable);
             }
         }
     }
