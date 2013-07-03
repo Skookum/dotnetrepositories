@@ -15,7 +15,8 @@ namespace Repositories
 
         public void Create<T>(T item) where T : class
         {
-            _repository.Add(item);
+            if (!Get<T>().Any(e => e.Equals(item)))
+                _repository.Add(item);
         }
 
         public void Create<T>(IEnumerable<T> items) where T : class
