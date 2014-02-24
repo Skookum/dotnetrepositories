@@ -7,7 +7,7 @@ namespace Repositories
 {
     public class EntityFrameworkRepository : IRepository
     {
-        private readonly DbContext _dbContext;
+        protected readonly DbContext _dbContext;
 
         public EntityFrameworkRepository(DbContext dbContext)
         {
